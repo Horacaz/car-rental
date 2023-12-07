@@ -1,0 +1,29 @@
+{
+  "name": "car-rental",
+  "version": "1.0.0",
+  "description": "Horacaz's Car Rental Service monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "pre-commit": "npm run --workspaces --if-present lint-staged"
+
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horacaz/car-rental.git"
+  },
+  "author": "Horacio Cazavant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Horacaz/car-rental/issues"
+  },
+  "homepage": "https://github.com/Horacaz/car-rental#readme",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
